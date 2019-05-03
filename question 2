@@ -1,0 +1,34 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	double usedwater, balance,charge,watercost, waterconsumption,use,extracharge;
+	charge=35;
+	use=1.10;
+	extracharge=20;
+	
+	cout << "Please indicate the number of used water in gallons : "; 
+	cin >> usedwater;
+	cout << "Please indicate the balance due (if there is any) : "; 
+	cin >> balance;
+	
+	if (balance > 0)
+	{
+		waterconsumption = usedwater * use;
+		watercost = charge + waterconsumption + balance + extracharge;
+		cout << " Your bill for this month is PhP" << watercost << endl;
+	}
+	
+	else 
+	{
+		waterconsumption = usedwater * use;
+		watercost = charge + waterconsumption;
+		cout << "Your bill for this month is PhP " << watercost << endl;
+		
+	}
+	
+return 0;
+}
