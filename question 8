@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int x, y;
+
+    cout << "Enter a whole number: ";
+    
+    cin >> x;
+    
+    cout<< "Multiplication Table";
+
+    for (y = 1; y <= 10; ++y)
+	{
+        cout << "\n"<< x << " * " << y << " = " << x * y << endl;
+    }
+    
+    return 0;
+}
