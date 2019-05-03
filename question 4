@@ -1,0 +1,35 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+int main ()
+
+{
+	
+int a, b, c;
+
+cout << "Enter the first number: ";
+cin >> a;
+cout << "Enter the second number: ";
+cin >> b;
+
+cout << "Enter the third number: " ;
+cin >> c;
+
+ if(a>b && a>c)
+    {
+        cout << "Largest number on the list: " << a;
+    }
+
+    if(b>a && b>c)
+    {
+        cout << "Largest number on the list: " << b;
+    }
+
+    if(c>a && c>b) 
+	{
+        cout << "Largest number on the list: " << c;
+    }
+
+    return 0;
+}
