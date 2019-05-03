@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int f,a,y,e;
+    cout<<"Number of Rows: ";
+    cin>>f;
+    cout<<"Number of Columns: ";
+    cin>>a;
+    
+    for (y = 1; y <= f; y++)
+    {
+        for (e = 1; e <= a; e++)
+        {
+            cout << "* ";
+        }
+        cout<<endl;
+    }
+    return 0;
+}
