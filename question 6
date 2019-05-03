@@ -1,0 +1,33 @@
+#include <iostream>  
+
+using namespace std;
+  
+int main()
+ 
+{  
+  int a, next, flow, b, c;
+  
+  b = 0;
+  c = 1;
+  
+  cout << "Type 20 to begin the Fibonacci Sequencing \n " ;
+  cin >> flow ;
+  
+  cout << "Here are the first 20 Fibonacci numbers  \n" ;
+  
+  for ( a = 0 ; a < flow ; a++)
+	{
+		if (a <= 1)
+		next = a;
+		
+		else
+		{
+			next = b + c;
+			b = c;
+			c = next;
+		}
+	cout << next << " ";
+	}
+	return 0;
+	  
+}
